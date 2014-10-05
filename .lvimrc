@@ -1,0 +1,11 @@
+if g:localvimrc_sourced_once == 0
+
+    if ! exists("g:syntastic_html_tidy_ignore_errors")
+        let g:syntastic_html_tidy_ignore_errors = []
+    endif
+
+    call add(g:syntastic_html_tidy_ignore_errors, " proprietary attribute \"z-")
+    call add(g:syntastic_html_tidy_ignore_errors, " proprietary attribute \"class\"")
+
+endif
+
